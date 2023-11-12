@@ -1,12 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import { type Config } from "tailwindcss";
+
+const config: Config = {
   darkMode: ["class"],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+  content: ["./src/app/**/*.{ts,tsx}", "./src/components/**/*.{ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -16,14 +13,32 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        mobile: "url('/bg-intro-mobile.svg')",
+        desktop: "url('/bg-intro-desktop.svg')",
+		gradient: "bg-gradient-to-r from-teal-400 to-emerald-400",
+      },
+      colors: {
+        primary: {
+          blue: "hsl(233, 26%, 24%)",
+          green: "hsl(136, 65%, 51%)",
+          cyan: "hsl(192, 70%, 51%)",
+        },
+        neutral: {
+          white: "hsl(0, 0%, 100%)",
+          gray: "hsl(0, 0%, 98%)",
+          blue: "hsl(233, 8%, 62%)",
+          lblue: "hsl(220, 16%, 96%)",
+        },
+      },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0" },
         },
       },
       animation: {
@@ -33,5 +48,6 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
 
+export default config;
