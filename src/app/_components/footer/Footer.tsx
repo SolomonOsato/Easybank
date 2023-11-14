@@ -29,13 +29,14 @@ export default function Footer() {
           <Logo fill="white" />
           <div className="flex gap-2">
             {Socials.map((social, index) => (
-              <Image
-                key={index}
-                src={social}
-                alt={social.split("/")[1]}
-                width={21}
-                height={19}
-              />
+              <Link key={index} href={"/"}>
+                <Image
+                  src={social}
+                  alt={social.split("/")[1]}
+                  width={21}
+                  height={19}
+                />
+              </Link>
             ))}
           </div>
         </div>
