@@ -1,9 +1,11 @@
 import { ReactNode } from "react"
+import { cn } from "@/lib/utils"
 
 type Props = {
+	className?: string;
 	children: ReactNode;
 }
 
-export default function Container({ children }: Props) {
-	return <div className="max-w-screen-md mx-auto px-4">{children}</div>
+export default function Container({ className, children }: Props) {
+	return <div className={cn("max-w-screen-md mx-auto px-4", className)}>{children}</div>
 }

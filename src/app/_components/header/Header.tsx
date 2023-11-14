@@ -1,6 +1,6 @@
 import Container from "@/components/utils/Container";
 import Image from "next/image";
-import Logo from "../../../../public/logo.svg";
+import Logo from "@/components/utils/Logo";
 import Nav from "./Nav";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
@@ -10,7 +10,7 @@ export default function Header() {
     <div className="sticky z-50 top-0 md:static bg-white">
       <Container>
         <header className="flex justify-between h-20 items-center">
-          <Image src={Logo} alt="easybank" />
+          <Logo />
           <Nav />
           <Link
             href={"/"}
