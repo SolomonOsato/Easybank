@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="sticky z-50 top-0 md:static bg-white">
+    <div className="sticky z-50 top-0 lg:static bg-white">
       <Container>
         <header className="flex justify-between h-20 items-center">
           <Logo />
@@ -16,7 +16,7 @@ export default function Header() {
             href={"/"}
             className={buttonVariants({
               size: "sm",
-              className: "px-4 hidden md:flex",
+              className: "px-4 hidden lg:flex",
             })}
           >
             Request invite

@@ -5,11 +5,11 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="grid gap-0 md:gap-8 md:grid-cols-2 pb-8">
-      <div className="order-1 md:order-2 bg-mobile md:bg-desktop overflow-y-hidden md:overflow-y-visible md:bg-cover h-[25rem]">
-        <Image className="relative -top-[30%] md:top-[20%]" src={HeroImage} alt="mockup" />
+    <section className="grid gap-0 lg:gap-8 lg:grid-cols-2 pb-8">
+      <div className="order-1 lg:order-2 bg-mobile lg:bg-desktop overflow-y-hidden lg:overflow-y-visible lg:bg-cover h-[25rem]">
+        <Image className="relative -top-[30%] lg:top-[20%]" src={HeroImage} alt="mockup" />
       </div>
-      <div className="text-center md:text-left text-primary-blue order-2 md:order-1 grid gap-8 md:gap-8 md:place-content-center">
+      <div className="text-center lg:text-left text-primary-blue order-2 lg:order-1 grid gap-8 lg:gap-8 lg:place-content-center">
         <h1 className="text-5xl">Next generation digital banking</h1>
         <p className="font-light">
           Take your financial life online. Your Easybank account will be a
@@ -20,7 +20,7 @@ export default function Hero() {
             href={"/"}
             className={buttonVariants({
               size: "lg",
-              className: "justify-self-center md:justify-self-start",
+              className: "justify-self-center lg:justify-self-start",
             })}
           >
             Request invite

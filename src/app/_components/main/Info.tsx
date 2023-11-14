@@ -28,13 +28,13 @@ export default function Info() {
     },
   ];
   return (
-    <section className="grid gap-8 text-center md:text-left">
+    <section className="grid gap-8 text-center lg:text-left">
       <h2 className="text-4xl">Why choose Easybank?</h2>
       <p className="font-light max-w-[60ch]">
         We leverage Open Banking to turn your bank account into your financial
         hub. Control your finances like never before.
       </p>
-      <div className="grid gap-8 md:gap-4 py-8 md:grid-cols-4">
+      <div className="grid gap-8 lg:gap-4 py-8 lg:grid-cols-4">
         {InfoDetails.map((detail, index) => (
           <section className="grid gap-8" key={index}>
             <Image
@@ -42,7 +42,7 @@ export default function Info() {
               alt={detail.heading}
               width={72}
               height={72}
-              className="rounded-full justify-self-center md:justify-self-start"
+              className="rounded-full justify-self-center lg:justify-self-start"
             />
             <h3 className="text-3xl">{detail.heading}</h3>
             <p className="font-light">{detail.content}</p>

@@ -36,7 +36,7 @@ export default function Articles() {
   return (
     <section>
       <h2 className="text-4xl">Latest Articles</h2>
-      <div className="grid gap-8 md:gap-4 py-8 md:grid-cols-4 ">
+      <div className="grid gap-8 lg:gap-4 py-8 lg:grid-cols-4 ">
         {ArticlesList.map((article, index) => (
           <section className="rounded-lg shadow overflow-hidden" key={index}>
             <Image

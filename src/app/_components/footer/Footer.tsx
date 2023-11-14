@@ -24,8 +24,8 @@ export default function Footer() {
   ];
   return (
     <footer className="bg-primary-blue text-neutral-lblue py-16">
-      <Container className="grid gap-8 md:grid-cols-3">
-        <div className="grid gap-4 justify-center md:justify-start items-baseline">
+      <Container className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-4 justify-center lg:justify-start items-baseline">
           <Logo fill="white" />
           <div className="flex gap-2">
             {Socials.map((social, index) => (
@@ -40,19 +40,19 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <ul className="text-center items-baseline md:text-left grid gap-2 md:gap-4 md:grid-cols-2">
+        <ul className="text-center items-baseline lg:text-left grid gap-2 lg:gap-4 lg:grid-cols-2">
           {Footerslinks.map((link) => (
             <li key={link}>
               <Link href={"/"}>{link}</Link>
             </li>
           ))}
         </ul>
-        <div className="grid justify-center md:justify-end gap-8 text-center md:text-right">
+        <div className="grid justify-center lg:justify-end gap-8 text-center lg:text-right">
           <Link
             href={"/"}
             className={buttonVariants({
               size: "sm",
-              className: "px-4 w-fit justify-self-center md:justify-self-end",
+              className: "px-4 w-fit justify-self-center lg:justify-self-end",
             })}
           >
             Request invite
